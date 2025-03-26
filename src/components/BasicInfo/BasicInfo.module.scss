@@ -1,0 +1,19 @@
+.basic-info {
+  padding-left: 28px;
+
+  .basic-info-item {
+    margin: 16px 0;
+
+    &::marker {
+      font-size: 14px;
+    }
+
+    .value {
+      margin-left: 8px;
+    }
+
+    .email-link {
+      color: var(--text-primary-color);
+    }
+  }
+}

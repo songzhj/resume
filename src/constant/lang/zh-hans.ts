@@ -8,7 +8,7 @@ export const ZhHans: LangType = {
   genderLabel: '性别：',
   gender: '男',
   yearText: '年',
-  monthText: '月',
+  monthText: '个月',
   dayText: '天',
   hourText: '小时',
   minuteText: '分',
