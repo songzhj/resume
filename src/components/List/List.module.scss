@@ -1,0 +1,11 @@
+.ul {
+  padding-left: 28px;
+
+  .li {
+    margin: 16px 0;
+
+    &::marker {
+      font-size: 14px;
+    }
+  }
+}
