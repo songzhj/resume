@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react';
 import { useLang } from '../../hooks/lang.tsx';
+import { List } from '../List/List.tsx';
 import { RealTimeAge } from '../RealTimeAge/RealTimeAge.tsx';
 import classes from './BasicInfo.module.scss';
 
@@ -7,17 +8,17 @@ const BasicInfoItem = ({
   label,
   render,
 }: { label: string; render: ReactNode }) => (
-  <li className={classes.basicInfoItem}>
+  <List.Item>
     <span>{label}</span>
-    <span className={classes.value}>{render}</span>
-  </li>
+    <span>{render}</span>
+  </List.Item>
 );
 
 export const BasicInfo = () => {
   const { emailLabel, email, ageLabel, genderLabel, gender } = useLang();
 
   return (
-    <ul className={classes.basicInfo}>
+    <List>
       <BasicInfoItem
         label={emailLabel}
         render={
@@ -28,6 +29,6 @@ export const BasicInfo = () => {
       />
       <BasicInfoItem label={genderLabel} render={gender} />
       <BasicInfoItem label={ageLabel} render={<RealTimeAge />} />
-    </ul>
+    </List>
   );
 };

@@ -1,0 +1,9 @@
+.career {
+  &:not(:first-child) {
+    margin-top: 28px;
+  }
+
+  .company {
+    margin-left: 16px;
+  }
+}

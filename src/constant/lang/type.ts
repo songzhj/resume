@@ -11,6 +11,17 @@ export interface LangType {
   hourText: string;
   minuteText: string;
   secondText: string;
+  educationLabel: string;
+  educationDuration: string;
+  educationContent: string;
+  careerLabel: string;
+  career: ReadonlyArray<CareerType>;
+}
+
+export interface CareerType {
+  duration: string;
+  companyAndTitle: string;
+  description: ReadonlyArray<string>;
 }
 
 export enum LangTypes {
