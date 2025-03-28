@@ -1,10 +1,12 @@
 import { useLang } from '../../hooks/lang.tsx';
+import { useIsClient } from '../../hooks/useIsClient.ts';
 import { useRefreshByTimer } from '../../hooks/useRefreshByTimer.ts';
 import classes from './RealTimeAge.module.scss';
 
 const bornDate = new Date('1994/07/23');
 
 export const RealTimeAge = () => {
+  const isClient = useIsClient();
   const { yearText, monthText, dayText, hourText, minuteText, secondText } =
     useLang();
   const nowDate = new Date();
@@ -28,6 +30,10 @@ export const RealTimeAge = () => {
   }
 
   useRefreshByTimer(1000);
+
+  if (!isClient) {
+    return null;
+  }
 
   return (
     <span className={classes.age}>
