@@ -1,9 +1,16 @@
 ---
 import { Resume } from '../components/Resume/Resume';
 import Layout from '../layouts/Layout.astro';
-import '../style/theme.css';
+import '../styles/global.css';
+import '../styles/theme.css';
 ---
 
 <Layout title="Zhijia.Song">
   <Resume client:idle />
 </Layout>
+
+<style is:global>
+  div, p, span {
+    color: var(--text-primary-color);
+  }
+</style>

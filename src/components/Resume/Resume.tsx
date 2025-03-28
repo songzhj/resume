@@ -7,12 +7,13 @@ import { Career } from '../Career/Career.tsx';
 import { Divider } from '../Divider/Divider.tsx';
 import { Education } from '../Education/Education.tsx';
 import { Name } from '../Name/Name.tsx';
+import { Project } from '../Project/Project.tsx';
 import { ResumeSection } from '../ResumeSection/ResumeSection.tsx';
 import classes from './Resume.module.scss';
 
 export const Resume = () => {
   const [selectedLang, setSelectedLang] = useState<LangTypes>(LangTypes.zhHans);
-  const { educationLabel, careerLabel } = useLang();
+  const { educationLabel, careerLabel, projectLabel } = useLang();
 
   // TODO: language select
 
@@ -29,6 +30,10 @@ export const Resume = () => {
 
         <ResumeSection title={careerLabel}>
           <Career />
+        </ResumeSection>
+
+        <ResumeSection title={projectLabel}>
+          <Project />
         </ResumeSection>
       </div>
     </LangProvider>

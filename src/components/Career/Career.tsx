@@ -6,10 +6,10 @@ import classes from './Career.module.scss';
 const CareerItem = ({ career }: { career: CareerType }) => {
   return (
     <div className={classes.career}>
-      <p>
+      <h3 className="text-[17px] font-[600]">
         <span>{career.duration}</span>
-        <span className={classes.company}>{career.companyAndTitle}</span>
-      </p>
+        <span className="ml-16">{career.companyAndTitle}</span>
+      </h3>
       <List>
         {career.description.map((_) => (
           <List.Item key={_}>{_}</List.Item>

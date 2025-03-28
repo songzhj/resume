@@ -1,6 +1,5 @@
 import { useLang } from '../../hooks/lang.tsx';
 import { List } from '../List/List.tsx';
-import classes from './Education.module.scss';
 
 export const Education = () => {
   const { educationDuration, educationContent } = useLang();
@@ -9,7 +8,7 @@ export const Education = () => {
     <List>
       <List.Item>
         <span>{educationDuration}</span>
-        <span className={classes.content}>{educationContent}</span>
+        <span className="ml-16">{educationContent}</span>
       </List.Item>
     </List>
   );

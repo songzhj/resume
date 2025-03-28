@@ -16,12 +16,21 @@ export interface LangType {
   educationContent: string;
   careerLabel: string;
   career: ReadonlyArray<CareerType>;
+  projectLabel: string;
+  project: ReadonlyArray<ProjectType>;
 }
 
 export interface CareerType {
   duration: string;
   companyAndTitle: string;
   description: ReadonlyArray<string>;
+}
+
+export interface ProjectType {
+  duration: string;
+  name: string;
+  description: string;
+  highlights: ReadonlyArray<string>;
 }
 
 export enum LangTypes {
