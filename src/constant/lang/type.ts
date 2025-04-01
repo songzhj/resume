@@ -18,6 +18,8 @@ export interface LangType {
   career: ReadonlyArray<CareerType>;
   projectLabel: string;
   project: ReadonlyArray<ProjectType>;
+  skillLabel: string;
+  skillDescription: ReadonlyArray<string>;
 }
 
 export interface CareerType {

@@ -98,4 +98,15 @@ export const ZhHans: LangType = {
       highlights: ['实现高性能的视频滑动和预加载'],
     },
   ],
+  skillLabel: '专业技能',
+  skillDescription: [
+    '熟练使用React，有大量使用React及其周边生态的开发经验',
+    '有丰富的TypeScript开发经验，熟练使用JavaScript',
+    '熟悉RxJS，有大量使用RxJS的异步数据流经验',
+    '熟悉Electron和NodeJS，有多个使用Electron进行跨平台桌面端开发的项目经验',
+    '有Angular(2+)的大型项目开发经验',
+    '有Vue2.x和少量Vue3的开发经验',
+    '有限的Astro使用经验',
+    '有基于Gitlab CI/CD进行项目持续集成与部署的经验',
+  ],
 };
