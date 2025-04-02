@@ -82,7 +82,12 @@ export const Skill = () => {
     <div>
       <p className="flex mt-16">
         {SkillLinkList.map((_) => (
-          <SkillLink key={_.link} link={_.link} Icon={_.Icon} />
+          <SkillLink
+            className="w-36 h-auto"
+            key={_.link}
+            link={_.link}
+            Icon={_.Icon}
+          />
         ))}
       </p>
       <List className="mt-16">
