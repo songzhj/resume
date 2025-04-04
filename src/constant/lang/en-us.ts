@@ -22,32 +22,31 @@ export const EnUS: LangType = {
       duration: '2018/08 - 2023/11',
       companyAndTitle: 'Frontend Engineer, Yuanfudao(Kanyun Inc).',
       description: [
-        '先后经历斑马英语、飞象星球、ClassUp三个业务',
-        '业务线前端项目的开发与维护',
-        '前端团队技术规范的制定和代码审查',
-        '产品需求的技术评审',
-        '新人入职后的培养和成长',
+        'Participated in the development of three business lines: Zebra English, Feixiang Planet, and ClassUp',
+        'Responsible for the development and maintenance of frontend projects across different business lines',
+        'Established frontend team coding standards and conducted code reviews',
+        'Conducted technical evaluations for product requirements',
+        'Mentored new hires and supported their onboarding and growth',
       ],
     },
     {
       duration: '2017/07 - 2018/07',
       companyAndTitle: 'Frontend Engineer, Qunar Inc.',
       description: [
-        '机票业务移动端和PC端售卖全流程的维护和迭代',
-        '营销活动落地页的开发和CMS组件的开发与维护',
-        '趣浪短视频项目从0到1的快速开发上线',
+        'Maintained the full sales process for flight booking on both mobile and PC platforms',
+        'Developed marketing campaign pages and maintained CMS components',
+        'Development QuLang short-form video project from 0 to 1',
       ],
     },
   ],
-  projectLabel: '项目经验',
+  projectLabel: 'Project Experience',
   project: [
     {
       duration: '2022/05 - 2023/11',
       name: 'ClassUp (classup.com)',
       description:
-        'ClassUp是看云控股旗下的出海业务，是一款针对北美K12阶段的全科目在线辅导平台。项目涉及到的内容有C端的品牌官网、售卖流程、营销活动页，Mac与Windows端的老师/学生端、直播课堂，B端的业务后台、销售/助教工作台、老师招聘后台',
+        'ClassUp is an overseas business under KanYun Inc. It is an online tutoring platform targeting K-12 students in North America which covers multiple subjects.The business involves include: Customer-facing Website (brand website, purchase flow, and marketing campaign pages); Desktop Application (teacher/student client and live classroom on Mac and Windows); Business-facing Management Console (business admin system, sales and teaching assistant dashboard, and teacher recruitment admin system)',
       highlights: [
-        '快速完成全流程0到1的搭建，实现产品模式的落地与验证',
         '优化官网首屏，秒开率达90%以上；非首屏页面预加载，实现二级页面秒开',
         '配合产品对留资流程进行细粒度的ABT，持续有效的提升投放到leads的转化率',
         'Electron跨平台实现Mac与Windows端，通过本地Socket与端内QT白板通信实现共享屏幕时QT应用的生命周期管理',
