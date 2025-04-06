@@ -20,7 +20,7 @@ export const EnUS: LangType = {
   career: [
     {
       duration: '2018/08 - 2023/11',
-      companyAndTitle: 'Frontend Engineer, Yuanfudao(Kanyun Inc).',
+      companyAndTitle: 'Frontend Engineer, Yuanfudao(Kanyun Inc.).',
       description: [
         'Participated in the development of three business lines: Zebra English, Feixiang Planet, and ClassUp',
         'Responsible for the development and maintenance of frontend projects across different business lines',
@@ -47,46 +47,45 @@ export const EnUS: LangType = {
       description:
         'ClassUp is an overseas business under KanYun Inc. It is an online tutoring platform targeting K-12 students in North America which covers multiple subjects.The business involves include: Customer-facing Website (brand website, purchase flow, and marketing campaign pages); Desktop Application (teacher/student client and live classroom on Mac and Windows); Business-facing Management Console (business admin system, sales and teaching assistant dashboard, and teacher recruitment admin system)',
       highlights: [
-        '优化官网首屏，秒开率达90%以上；非首屏页面预加载，实现二级页面秒开',
-        '配合产品对留资流程进行细粒度的ABT，持续有效的提升投放到leads的转化率',
-        'Electron跨平台实现Mac与Windows端，通过本地Socket与端内QT白板通信实现共享屏幕时QT应用的生命周期管理',
-        '热更新机制实现端内非直播课堂模块的无感更新，减少双端发版频率',
-        '基于Gitlab CI/CD实现Electron双端的打包、签名和公证',
-        'monorepo实现多项目同构，降低代码重用的复杂度和心智负担',
+        'Optimized the brand website to achieve FCP less than 1s at the tp90, and implemented resource preloading for secondary pages to enable instantaneous navigation',
+        'Collaborated with the product team to conduct fine-grained ABT on the lead capture process, consistently and effectively increasing the conversion rate from ad campaigns to leads.',
+        'Developed cross-platform applications for Mac and Windows using Electron. Leveraged local socket communication with an in-app QT whiteboard to manage the lifecycle of the QT application during screen sharing',
+        'seamless in-app updates for non live classroom modules by a hot update mechanism, reducing the release frequency',
+        'Leveraged GitLab CI/CD to implement building, packaging, signing, and notarization for Electron applications on both Mac and Windows',
+        'Leveraged a monorepo to reduce the complexity and mental overhead of code reuse',
       ],
     },
     {
       duration: '2021/08 - 2022/05',
-      name: '飞象星球',
+      name: 'Feixiang Planet',
       description:
-        '飞象星球是看云控股响应双减政策的一款toG进校业务，包含一系列智慧教育相关的产品内容。项目涉及的主要内容有针对教务方面的师资/学生管理、智能排课、智慧校园，针对课堂方面的双师素质课堂、在线课堂，针对课后托管方面的VR虚拟课堂，针对作业方面的学生能力评估、个性化组题、作业智能批改',
+        "Feixiang Planet is Kanyun Inc.'s school-oriented business, featuring a suite of smart education products. The project covers key aspects including: teacher and student management, intelligent scheduling, and smart campus solutions for academic administration; dual-teacher quality classes and online classrooms for classroom instruction; VR virtual classrooms for after-school care; student ability assessments, personalized question grouping, and intelligent homework grading for assignments",
       highlights: [
-        '优化Electron在校园低版本低配置设备上运行的问题',
-        '直播课堂支持PPT课件的渲染',
-        'AI数据标注平台低成本快速上线',
+        'Optimize Electron application to run on low version and low performance devices on schools',
+        'Live Classroom supports rendering of PPT courseware',
       ],
     },
     {
       duration: '2019/04 - 2021/08',
-      name: '斑马AI学-外教一对一',
+      name: 'Zebra AI - 1on1 oral class',
       description:
-        '斑马AI学是看云控股旗下一款针对3-8岁幼儿的儿童数字内容产品，拥有阅读、思维、英语、美术等多个方向。外教一对一是针对英语系统课的一个额外拓展，使学习英语系统课的儿童可以实时与北美外教进行一对一的口语交流练习。项目涉及的主要内容有Mac和Windows端的老师/学生端、直播课堂、回放，B端的相关业务后台',
+        "Zebra AI is a children's digital content product for 3-8 year olds under Kanyun Inc. with multiple directions such as reading, thinking, English and art. one-on-one oral class is an additional expansion for English systematic lessons, enabling children learning English systematic lessons to practice one-on-one oral communication with North American foreign teachers in real time. The main contents involved in the project are the teacher/student client of Mac and Windows, live classroom, playback, and the related business admin system",
       highlights: [
-        '端内Angular到React的平滑迁移',
-        '老师端约课日历在不同时区不同冬夏令时的渲染、控制逻辑',
-        '建立业务公共组件库和文档',
-        'B端完整的角色权限控制系统',
+        'Gradually migrated in-app modules from Angular to React',
+        "Rendering and control logic of the appointment calendar on the teacher's client for different time zones and DST",
+        'Built a common business component library and its documentation',
+        'Role Authority Control System',
       ],
     },
     {
       duration: '2018/08 - 2019//04',
-      name: '斑马英语-小程序',
+      name: 'Zebra English - Wechat mini-program',
       description:
-        '斑马英语尝试通过微信小程序-公众号的形式打造社群矩阵，将一些功能下放到小程序并且在小程序上为小朋友开发一些迷你小游戏，以签到、竞赛排名等方式增强用户粘性，提高用户对于斑马英语的品牌依赖和社圈间的自主传播。项目涉及的主要内容有斑马英语、斑马乐园、斑马星球三个小程序，分别承载了绘本、跟读、PK、游戏、活动营销和购课的能力',
+        'Zebra English explored building a WeChat-based ecosystem by combining Mini Programs and Official Accounts to form a community-driven user matrix. Some features from the main app were ported to Mini Programs, where lightweight mini-games were also developed for kids. Gamified mechanisms such as daily check-ins and leaderboard competitions were used to boost user stickiness, increase brand loyalty, and encourage organic sharing within social groups. The project included three Mini Programs (Zebra English, Zebra Park, and Zebra Planet) supporting different features such as e-book reading, follow-along pronunciation, user PK challenges, mini-games, marketing campaigns, and course purchases',
       highlights: [
-        '创建小程序模版工具，新项目一键初始化',
-        '实现小程序开发工具集，改造小程序的Page与Component，方便业务使用',
-        'Websocket对接AI中台实现跟读打分',
+        'Develop mini program template tool, one-click initialization for new projects',
+        'Implement mini program development toolset, optimize Page and Component of small program, convenient for business use',
+        'Implemented follow-along pronunciation scoring by interacting with the AI platform via WebSocket',
       ],
     },
     {
