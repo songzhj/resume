@@ -37,4 +37,6 @@ export interface ProjectType {
 
 export enum LangTypes {
   zhHans = 'zh-hans',
+
+  enUS = 'en-us',
 }
