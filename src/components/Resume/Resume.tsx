@@ -31,6 +31,10 @@ export const Resume = () => {
           <Divider />
           <BasicInfo />
 
+          <ResumeSection title={skillLabel}>
+            <Skill />
+          </ResumeSection>
+
           <ResumeSection title={educationLabel}>
             <Education />
           </ResumeSection>
@@ -41,10 +45,6 @@ export const Resume = () => {
 
           <ResumeSection title={projectLabel}>
             <Project />
-          </ResumeSection>
-
-          <ResumeSection title={skillLabel}>
-            <Skill />
           </ResumeSection>
         </div>
       </LangProvider>
