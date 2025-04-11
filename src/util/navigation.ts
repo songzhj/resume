@@ -1,3 +1,8 @@
+import { baseUrl } from '../constant/env.ts';
+
 export const pageTo = (path: string) => {
-  window.location.href = path;
+  // unify the path to remove leading slash
+  const unifyPath = path.replace(/^\//, '');
+
+  window.location.href = `${baseUrl}/${unifyPath}`;
 };
