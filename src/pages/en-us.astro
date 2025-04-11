@@ -1,10 +1,11 @@
 ---
 import { Resume } from '../components/Resume/Resume';
+import { LangTypes } from '../constant/lang/type';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Zhijia.Song">
-  <Resume client:idle />
+  <Resume defaultLang={LangTypes.enUS} client:idle />
 </Layout>
 
 <style is:global>

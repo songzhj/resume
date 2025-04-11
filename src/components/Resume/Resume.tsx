@@ -1,5 +1,4 @@
 import cx from 'classnames';
-import { useState } from 'react';
 import { LangMap } from '../../constant/lang';
 import { LangTypes } from '../../constant/lang/type.ts';
 import { LangProvider, useLang } from '../../hooks/lang.tsx';
@@ -14,18 +13,19 @@ import { ResumeSection } from '../ResumeSection/ResumeSection.tsx';
 import classes from './Resume.module.scss';
 import { Skill } from '../Skill/Skill.tsx';
 
-export const Resume = () => {
-  const [selectedLang, setSelectedLang] = useState<LangTypes>(LangTypes.zhHans);
+export const Resume = ({
+  defaultLang = LangTypes.zhHans,
+}: { defaultLang?: LangTypes }) => {
   const { educationLabel, careerLabel, projectLabel, skillLabel } = useLang();
 
   return (
     <>
       <LanguageSelector
         className="absolute top-16 right-16"
-        selectedLang={selectedLang}
-        onChange={setSelectedLang}
+        selectedLang={defaultLang}
+        onChange={onSelectLang}
       />
-      <LangProvider lang={LangMap[selectedLang]}>
+      <LangProvider lang={LangMap[defaultLang]}>
         <div className={cx(classes.resume, 'pb-16')}>
           <Name />
           <Divider />
