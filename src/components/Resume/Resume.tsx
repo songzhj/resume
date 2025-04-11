@@ -2,6 +2,7 @@ import cx from 'classnames';
 import { LangMap } from '../../constant/lang';
 import { LangTypes } from '../../constant/lang/type.ts';
 import { LangProvider, useLang } from '../../hooks/lang.tsx';
+import { pageTo } from '../../util/navigation.ts';
 import { BasicInfo } from '../BasicInfo/BasicInfo.tsx';
 import { Career } from '../Career/Career.tsx';
 import { Divider } from '../Divider/Divider.tsx';
@@ -17,6 +18,16 @@ export const Resume = ({
   defaultLang = LangTypes.zhHans,
 }: { defaultLang?: LangTypes }) => {
   const { educationLabel, careerLabel, projectLabel, skillLabel } = useLang();
+
+  const onSelectLang = (lang: LangTypes) => {
+    switch (lang) {
+      case LangTypes.zhHans:
+        pageTo('/');
+        return;
+      default:
+        pageTo(lang);
+    }
+  };
 
   return (
     <>
