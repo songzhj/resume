@@ -30,7 +30,7 @@ export const EnUS: LangType = {
       ],
     },
     {
-      duration: '2017/07 - 2018/07',
+      duration: '2016/11 - 2018/07',
       companyAndTitle: 'Frontend Engineer, Qunar Inc.',
       description: [
         'Maintained the full sales process for flight booking on both mobile and PC platforms',

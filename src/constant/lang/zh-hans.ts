@@ -30,7 +30,7 @@ export const ZhHans: LangType = {
       ],
     },
     {
-      duration: '2017/07 - 2018/07',
+      duration: '2016/11 - 2018/07',
       companyAndTitle: '去哪儿网 前端工程师',
       description: [
         '机票业务移动端和PC端售卖全流程的维护和迭代',
